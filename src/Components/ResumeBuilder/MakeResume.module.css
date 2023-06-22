@@ -1,0 +1,18 @@
+.make {
+  height: 100vh;
+  padding: 10px;
+}
+.cvimage {
+  object-fit: contain;
+  height: 350px;
+  aspect-ratio: 1;
+}
+.text {
+  color: black;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+.description {
+  font-weight: lighter;
+  color: #a8adaa;
+}
