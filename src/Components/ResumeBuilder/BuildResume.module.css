@@ -1,0 +1,65 @@
+.build {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 90%;
+  height: 6rem;
+  border: 2px solid black;
+}
+.description {
+  height: 70%;
+  margin-right: 10%;
+  width: 85rem;
+  display: flex;
+  justify-content: space-between;
+}
+.description p {
+  font-size: 25px;
+}
+.description a {
+  text-decoration: none;
+  border-radius: 20px;
+  width: 15rem;
+  height: 3rem;
+  padding: 10px;
+  color: white;
+  background-color: #0091ff;
+  box-shadow: 2px 2px 10px #0091ff;
+}
+.icon {
+  position: relative;
+  color: #39baf8;
+  z-index: -100;
+  top: -50%;
+  right: -1%;
+}
+.redbox {
+  z-index: 3;
+  background-color: #ee636a;
+  height: 4rem;
+  width: 20rem;
+  margin-top: -90px;
+  margin-left: -70px;
+  transform: rotate(135deg);
+}
+.greenbox {
+  height: 4rem;
+  z-index: 2;
+  background-color: #7af2de;
+  width: 40rem;
+  margin-top: -10px;
+  margin-left: -270px;
+}
+@media screen and (max-width: 1040px) {
+  .greenbox {
+    margin-left: -200px;
+    /* top: 10px; */
+  }
+}
