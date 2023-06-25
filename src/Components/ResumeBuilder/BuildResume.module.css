@@ -47,9 +47,64 @@
   margin-top: -10px;
   margin-left: -270px;
 }
+.description a {
+  text-decoration: none;
+}
+.build-resume-button {
+  background-color: #0091ff;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 5px 5px 2px 10px #0091ff;
+}
+
+.build-resume-button:hover {
+  background-color: #007aff;
+}
+
 @media screen and (max-width: 1040px) {
   .greenbox {
     margin-left: -200px;
-    /* top: 10px; */
+  }
+  .description p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .greenbox {
+    margin-left: -150px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .description {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container {
+    height: 15rem;
+  }
+  .description p {
+    margin-top: 5%;
+  }
+  .greenbox {
+    margin-top: -50%;
+    width: 80rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .description {
+    margin-right: -5%;
+  }
+  .description p {
+    font-size: 15px;
+  }
+  .greenbox {
+    margin-left: 10%;
+    margin-top: -110%;
   }
 }

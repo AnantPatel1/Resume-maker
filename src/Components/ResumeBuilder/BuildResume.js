@@ -9,6 +9,7 @@ export default function BuildResume() {
         <div className={`${classes.greenbox} ${classes.redbox}`}></div>
         <div className={classes.description}>
           <p>Create a professional resume for Free in a minute</p>
+          <a className={classes["build-resume-button"]}>Build resume</a>
         </div>
         <SettingsIcon
           className={classes.icon}
