@@ -36,6 +36,26 @@
   position: relative;
   left: 50%;
 }
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.btn a {
+  margin-top: 0rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #05a877;
+  color: white;
+  height: 3rem;
+  border-radius: 5px;
+  width: 10rem;
+}
 @media screen and (max-width: 768px) {
   .step p {
     font-size: 12px;

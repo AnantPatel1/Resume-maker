@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./ResumeSteps.module.css";
+import { NavLink } from "react-router-dom";
 
 const ResumeSteps = () => {
   const steps = [
@@ -57,6 +58,11 @@ const ResumeSteps = () => {
           <div style={{ position: "absolute", top: 0, right: 0 }}></div>
         </div>
       ))}
+      <div className={classes.btn}>
+        <NavLink to="/">
+          <a href="#">Start Building</a>
+        </NavLink>
+      </div>
     </div>
   );
 };
