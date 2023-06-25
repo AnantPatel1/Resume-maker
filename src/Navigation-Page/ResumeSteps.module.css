@@ -1,0 +1,26 @@
+.resume-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.step {
+  width: 25%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.step img {
+  width: 100%;
+}
+
+.step h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.step p {
+  font-size: 14px;
+  margin-bottom: 0;
+}

@@ -15,8 +15,8 @@
 }
 .description {
   height: 70%;
-  margin-right: 10%;
-  width: 85rem;
+  margin-left: -10%;
+  width: 90rem;
   display: flex;
   justify-content: space-between;
 }
@@ -36,7 +36,7 @@
   height: 4rem;
   width: 20rem;
   margin-top: -90px;
-  margin-left: -70px;
+  margin-left: -100px;
   transform: rotate(135deg);
 }
 .greenbox {
@@ -45,22 +45,21 @@
   background-color: #7af2de;
   width: 40rem;
   margin-top: -10px;
-  margin-left: -270px;
+  margin-left: -350px;
 }
 .description a {
   text-decoration: none;
+  margin-top: 1%;
+  width: 200px;
+  /* margin-left: -50%; */
 }
 .build-resume-button {
-  background-color: #0091ff;
-  height: 40px;
-  width: 200px;
-  border-radius: 5px;
-  padding: 10px 20px;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 5px 5px 2px 10px #0091ff;
+  background-color: #007aff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #007aff;
+  color: white;
+  /* width: 10px; */
 }
 
 .build-resume-button:hover {
