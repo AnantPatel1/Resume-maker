@@ -20,8 +20,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="blueContainer"></div>
-      <div className="blueContainer darkBlueContainer"></div>
       <div className="container1">
         <div className="logo">
           <a>
@@ -54,6 +52,11 @@ const Navbar = () => {
               <a href="#">Login</a>
             </li>
           </ul>
+        </div>
+      </div>
+      <div className="container">
+        <div className="heading">
+          <p>Free Resume Examples & Sample Resume for All Jobs in 2023</p>
         </div>
       </div>
     </nav>

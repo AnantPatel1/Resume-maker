@@ -5,7 +5,6 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: #fcfcfc;
-  overflow: hidden;
 }
 .logo {
   display: flex;
@@ -27,24 +26,21 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 5rem;
-  /* position: fixed; */
-  /* padding: 400px 0px; */
-  z-index: 100;
 }
 
 .navbar {
-  /* height: 80px; */
-  width: 100vw;
+  width: 100%;
   padding: 80px 0px;
-  background-color: #fe4a5a;
-  position: relative;
-  z-index: 1000;
+  background-color: rgb(11, 206, 178);
+  /* position: relative; */
 }
 
 .menu-icon {
   display: none;
 }
-
+.nav-elements {
+  margin-right: 1%;
+}
 .nav-elements ul {
   display: flex;
   justify-content: space-between;
@@ -57,14 +53,9 @@ body {
 .nav-elements ul li a {
   color: white;
   font-size: 1.2rem;
-}
-
-.nav-elements ul a {
-  font-size: 16px;
-  font-weight: 400;
-  color: #2f234f;
   text-decoration: none;
 }
+
 .nav-elements ul li a:hover {
   color: black;
 }
@@ -74,32 +65,31 @@ body {
   font-weight: 500;
   position: relative;
 }
-
-.nav-elements ul a.active::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: blue;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
 }
-.blueContainer {
-  z-index: -10;
-  position: absolute;
-  background-color: #bfe1fb;
-  left: 90%;
-  top: 10%;
-  height: 25rem;
-  width: 20rem;
-  border-radius: 50px;
-  transform: rotate(38deg);
+.heading {
+  /* position: static; */
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.darkBlueContainer {
-  /* position: ; */
-  z-index: -11;
-  background-color: #0091ff;
-  top: 40%;
+.heading p {
+  /* width: 60rem; */
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 554px) {
+  .heading p {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 839px) {
@@ -129,9 +119,6 @@ body {
   }
 
   .nav-elements {
-    position: absolute;
-    right: 0;
-    top: 60px;
     background-color: #47f5ac;
     width: 0px;
     height: calc(100vh - 60px);
@@ -150,7 +137,7 @@ body {
   }
 
   .nav-elements ul li {
-    margin-right: unset;
+    /* margin-right: unset; */
     margin-top: 22px;
   }
 }

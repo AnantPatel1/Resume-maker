@@ -1,19 +1,17 @@
-.image {
+/* .image {
   height: 200px;
   aspect-ratio: 1;
 }
 .buttons {
   display: none;
 }
-.image:hover {
-  .buttons {
-    color: black;
-    text-decoration: none;
-    display: block;
-    border: 1px solid salmon;
-    background-color: salmon;
-    box-shadow: 1px 1px 2px saddlebrown;
-    width: 10rem;
-    border-radius: 20px;
-  }
-}
+.buttons {
+  color: black;
+  text-decoration: none;
+  display: block;
+  border: 1px solid salmon;
+  background-color: salmon;
+  box-shadow: 1px 1px 2px saddlebrown;
+  width: 10rem;
+  border-radius: 20px;
+} */
