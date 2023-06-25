@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
+  padding: 100px 100px;
 }
 
 .step {
@@ -12,7 +13,10 @@
 }
 
 .step img {
-  width: 100%;
+  width: 80%;
+  aspect-ratio: 1;
+  object-fit: fill;
+  margin: 0 auto;
 }
 
 .step h3 {
@@ -23,4 +27,40 @@
 .step p {
   font-size: 14px;
   margin-bottom: 0;
+}
+.dotted {
+  stroke-dasharray: 4, 4;
+  stroke: #999999;
+}
+.svg {
+  position: relative;
+  left: 50%;
+}
+@media screen and (max-width: 768px) {
+  .step p {
+    font-size: 12px;
+  }
+  .step h3 {
+    font-size: 15px;
+  }
+  .svg {
+    margin-left: -30%;
+  }
+  .resume-steps {
+    padding: 100px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .step p {
+    font-size: 10px;
+  }
+  .step h3 {
+    font-size: 12px;
+  }
+  .svg {
+    margin-left: -50%;
+  }
+  .resume-steps {
+    width: 120%;
+  }
 }
