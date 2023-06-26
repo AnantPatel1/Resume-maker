@@ -3,7 +3,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainPage from "./Components/Pages/MainPage/Mainpage";
 import ResumeSteps from "./Navigation-Page/ResumeSteps";
 import RootLayout from "./Navigation-Page/RootLayout/RootLayout";
-import SelectTemplate from "./Navigation-Page/SelectTemplate/SelectTemplate";
+import Templates from "./Navigation-Page/SelectTemplate/Templates";
+import SelectTemplate from "./Navigation-Page/SelectTemplate/SelectTemplatePage";
+import BuildResume from "./Navigation-Page/BuildResume/BuildResume";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +22,19 @@ const router = createBrowserRouter([
       {
         path: "build",
         element: <SelectTemplate />,
+      },
+      {
+        path: "select-template",
+        children: [
+          {
+            index: true,
+            element: <Templates />,
+          },
+          {
+            path: "build-resume",
+            element: <BuildResume />,
+          },
+        ],
       },
     ],
   },
