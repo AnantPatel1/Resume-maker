@@ -96,8 +96,8 @@
     margin-top: 22px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .navbar {
-    width: 120%;
+    width: 130%;
   }
 }
