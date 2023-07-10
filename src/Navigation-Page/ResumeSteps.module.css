@@ -37,24 +37,11 @@
   left: 50%;
 }
 .btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3nrem;
-}
-.btn a {
-  margin-top: 0rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
-  background-color: #05a877;
+  background-color: rgb(11, 206, 178);
   color: white;
-  height: 3rem;
-  border-radius: 5px;
-  width: 10rem;
+  padding: 10px;
+  /* margin-top: 20px; */
 }
 @media screen and (max-width: 768px) {
   .step p {

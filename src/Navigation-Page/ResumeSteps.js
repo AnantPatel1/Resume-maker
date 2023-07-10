@@ -58,9 +58,9 @@ const ResumeSteps = () => {
           <div style={{ position: "absolute", top: 0, right: 0 }}></div>
         </div>
       ))}
-      <div className={classes.btn}>
-        <NavLink to="/steps/build" end>
-          <a href="#">Start Building</a>
+      <div>
+        <NavLink className={classes.btn} to="/steps/build" end>
+          Start Building
         </NavLink>
       </div>
     </div>

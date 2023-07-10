@@ -13,6 +13,7 @@ const PersonalDetails = () => {
 
   const handleUpload = (event) => {
     setFile(event.target.files[0]);
+    console.log(file);
   };
 
   const handleChange = (event) => {

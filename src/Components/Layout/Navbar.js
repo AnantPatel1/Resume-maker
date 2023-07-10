@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import DensitySmallIcon from "@mui/icons-material/DensitySmall";
 import DisabledByDefaultIcon from "@mui/icons-material/DisabledByDefault";
 import "./Navbar.css";
@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container1">
         <div className="logo">
-          <a>
+          <a href="www.google.com">
             <BookOutlinedIcon
               fontSize={"large"}
               sx={{ transform: "scale(2.5)" }}
@@ -37,19 +37,19 @@ const Navbar = () => {
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
-              <a href="#">Resume Builder</a>
+              <a href="www.google.com">Resume Builder</a>
             </li>
             <li>
-              <a href="#">Resume Example</a>
+              <a href="www.google.com">Resume Example</a>
             </li>
             <li>
-              <a href="#">Cover Letter Example</a>
+              <a href="www.google.com">Cover Letter Example</a>
             </li>
             <li>
-              <a href="#">Template</a>
+              <a href="www.google.com">Template</a>
             </li>
             <li>
-              <a href="#">Login</a>
+              <a href="www.google.com">Login</a>
             </li>
           </ul>
         </div>

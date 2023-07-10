@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Heading, Text, Box } from "@chakra-ui/react";
 import ThemeTemplateData from "../db/ThemeTemplateData";
-import ResumeContext from "../../Context/ResumeContext";
+// import ResumeContext from "../../Context/ResumeContext";
 import "./Templates.css";
 
 export default function Templates() {

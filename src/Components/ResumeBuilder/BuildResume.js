@@ -10,8 +10,8 @@ export default function BuildResume() {
         <div className={`${classes.greenbox} ${classes.redbox}`}></div>
         <div className={classes.description}>
           <p>Create a professional resume for Free in a minute</p>
-          <NavLink to="/steps" end>
-            <a className={classes["build-resume-button"]}>Build resume</a>
+          <NavLink className={classes["build-resume-button"]} to="/steps" end>
+            Build resume
           </NavLink>
         </div>
         <SettingsIcon
