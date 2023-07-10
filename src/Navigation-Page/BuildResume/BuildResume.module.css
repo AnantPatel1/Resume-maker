@@ -3,12 +3,8 @@
   justify-content: center;
   width: 100%;
 }
-.imageItem {
-  object-fit: contain;
-}
-.item img {
-  width: 40rem;
-  aspect-ratio: 1;
+.item {
+  width: 50%;
 }
 
 @media (max-width: 1024px) {

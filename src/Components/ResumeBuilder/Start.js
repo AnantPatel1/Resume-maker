@@ -1,6 +1,6 @@
 import React from "react";
 import SettingsIcon from "@mui/icons-material/Settings";
-import classes from "./BuildResume.module.css";
+import classes from "./Start.module.css";
 import { NavLink } from "react-router-dom";
 export default function BuildResume() {
   return (

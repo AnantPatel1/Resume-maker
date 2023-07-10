@@ -4,7 +4,7 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
-import Template from "../../Assets/Resume Theme - 1.png";
+import Theme1 from "../Themes/Theme1";
 import PersonalInfoForm from "./PersonalDetails";
 import classes from "./BuildResume.module.css";
 export default function BuildResume() {
@@ -44,7 +44,7 @@ export default function BuildResume() {
         </Box>
       </div>
       <div className={`${classes.item} ${classes.imageItem} `}>
-        <img className={classes.template1} src={Template} alt="Template1" />
+        <Theme1 />
       </div>
     </div>
   );

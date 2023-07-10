@@ -6,6 +6,7 @@ import RootLayout from "./Navigation-Page/RootLayout/RootLayout";
 import Templates from "./Navigation-Page/SelectTemplate/Templates";
 import SelectTemplate from "./Navigation-Page/SelectTemplate/SelectTemplatePage";
 import BuildResume from "./Navigation-Page/BuildResume/BuildResume";
+import ResumeState from "./Context/ResumeState";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,7 +41,11 @@ const router = createBrowserRouter([
   },
 ]);
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <ResumeState>
+      <RouterProvider router={router} />
+    </ResumeState>
+  );
 }
 
 export default App;

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../Layout/Navbar";
-import BuildResume from "../../ResumeBuilder/BuildResume.js";
+import BuildResume from "../../ResumeBuilder/Start.js";
 import MakeResume from "../../ResumeBuilder/MakeResume.js";
 import classes from "./MainPage.module.css";
 export default function mainpage() {

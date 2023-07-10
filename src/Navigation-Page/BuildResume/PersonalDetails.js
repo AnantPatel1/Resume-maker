@@ -18,8 +18,7 @@ const PersonalDetails = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    console.log(name);
-    console.log(value);
+
     switch (name) {
       case "name":
         setName(value);
@@ -42,6 +41,8 @@ const PersonalDetails = () => {
       default:
         break;
     }
+    console.log(name);
+    console.log(value);
   };
 
   return (
