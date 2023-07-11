@@ -8,6 +8,7 @@ export default function Theme1() {
   const { name, address, email, profile, phone, skill } =
     themeData.personalData;
   const { educationTitles, educationDesc } = themeData.educationData;
+  const { projectTitles, projectDesc } = themeData.projectData;
   // console.log(name);
   return (
     <div className={styles.Theme1} ref={ComponentRef}>
@@ -57,6 +58,31 @@ export default function Theme1() {
                   {Object.entries(educationDesc)[key] === undefined
                     ? null
                     : Object.entries(educationDesc)
+                        [key][1].split(",")
+                        .map((element, index) => {
+                          return <li key={index}>{element}</li>;
+                        })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      {
+        // Projects
+      }
+
+      <section className={styles.projects}>
+        <header>Projects</header>
+        <div className={styles["basic-set"]}>
+          {Object.entries(projectTitles).map((item, key) => {
+            return (
+              <div key={key} className={styles.subBox}>
+                <p className={styles["sub-title"]}>{item[1]}</p>
+                <div className={styles["sub-details"]}>
+                  {Object.entries(projectDesc)[key] === undefined
+                    ? null
+                    : Object.entries(projectDesc)
                         [key][1].split(",")
                         .map((element, index) => {
                           return <li key={index}>{element}</li>;

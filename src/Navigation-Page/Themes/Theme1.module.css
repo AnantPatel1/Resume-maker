@@ -29,7 +29,8 @@
   margin: 10px;
 }
 .education,
-.skills {
+.skills,
+.projects {
   margin: 20px;
 }
 .education header {
@@ -37,7 +38,11 @@
   margin: 10px;
   font-size: 22px;
 }
-
+.projects header {
+  background-color: #98facc;
+  margin: 10px;
+  font-size: 22px;
+}
 .basic-set {
   margin: 0rem 2rem;
   padding-top: 10px;
