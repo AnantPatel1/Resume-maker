@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import "./PersonalDetails.module.css";
 import { IoMdCloudUpload } from "react-icons/io";
 import {
   FormControl,
@@ -9,7 +8,7 @@ import {
   Button,
   Switch,
 } from "@chakra-ui/react";
-import ResumeContext from "../../Context/ResumeContext";
+import ResumeContext from "../../../../Context/ResumeContext";
 const UserDataCollect = () => {
   const {
     themeData,
@@ -84,8 +83,8 @@ const UserDataCollect = () => {
     setThemeData({ ...themeData, projectData: projectData });
   };
 
-  const handleProjectClick = (e) => {
-    e.preventDefault();
+  const handleProjectClick = (event) => {
+    event.preventDefault();
     let i = projectCount;
     ++i;
     const template = (

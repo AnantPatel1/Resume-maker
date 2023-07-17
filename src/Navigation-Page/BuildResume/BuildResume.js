@@ -5,7 +5,8 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Theme1 from "../Themes/Theme1";
-import PersonalInfoForm from "./PersonalDetails";
+import PersonalInfoForm from "./UserDeatils/PersonalDeatils/PersonalDetails";
+import ProjectDetails from "./UserDeatils/ProjectDetails/ProjectDetails";
 import classes from "./BuildResume.module.css";
 export default function BuildResume() {
   const [value, setValue] = React.useState("1");
@@ -35,7 +36,9 @@ export default function BuildResume() {
             <TabPanel value="1">
               <PersonalInfoForm />
             </TabPanel>
-            <TabPanel value="2">Item Two</TabPanel>
+            <TabPanel value="2">
+              <ProjectDetails />
+            </TabPanel>
             <TabPanel value="3">Item Three</TabPanel>
             <TabPanel value="4">Item One</TabPanel>
             <TabPanel value="5">Item One</TabPanel>
