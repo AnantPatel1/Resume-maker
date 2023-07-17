@@ -7,6 +7,9 @@ import TabPanel from "@mui/lab/TabPanel";
 import Theme1 from "../Themes/Theme1";
 import PersonalInfoForm from "./UserDeatils/PersonalDeatils/PersonalDetails";
 import ProjectDetails from "./UserDeatils/ProjectDetails/ProjectDetails";
+import WorkDetails from "./UserDeatils/WrokDeatails/WorkDetails";
+import Education from "./UserDeatils/EducationDetails/Education";
+import Skills from "./UserDeatils/Skills/Skills";
 import classes from "./BuildResume.module.css";
 export default function BuildResume() {
   const [value, setValue] = React.useState("1");
@@ -27,23 +30,28 @@ export default function BuildResume() {
                 aria-label="lab API tabs example"
               >
                 <Tab label="Details" value="1" />
-                <Tab label="Item Two" value="2" />
-                <Tab label="Item Three" value="3" />
-                <Tab label="Item Three" value="4" />
-                <Tab label="Item Three" value="5" />
+                <Tab label="Skills" value="2" />
+                <Tab label="Education" value="3" />
+                <Tab label="Project Details" value="4" />
+                <Tab label="Work Details" value="5" />
               </TabList>
             </Box>
             <TabPanel value="1">
               <PersonalInfoForm />
             </TabPanel>
             <TabPanel value="2">
+              <Skills />
+            </TabPanel>
+            <TabPanel value="3">
+              <Education />
+            </TabPanel>
+            <TabPanel value="4">
               <ProjectDetails />
             </TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
-            <TabPanel value="4">Item One</TabPanel>
-            <TabPanel value="5">Item One</TabPanel>
+            <TabPanel value="5">
+              <WorkDetails />
+            </TabPanel>
           </TabContext>
-             
         </Box>
       </div>
       <div className={`${classes.item} ${classes.imageItem} `}>

@@ -9,7 +9,7 @@ import {
   Switch,
 } from "@chakra-ui/react";
 import ResumeContext from "../../../../Context/ResumeContext";
-const ProjectDetails = () => {
+const Skills = () => {
   const {
     themeData,
     checkAward,
@@ -430,4 +430,4 @@ const ProjectDetails = () => {
   );
 };
 
-export default ProjectDetails;
+export default Skills;
